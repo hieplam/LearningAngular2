@@ -10,5 +10,5 @@ import { Component } from '@angular/core';
     // templateUrl: 'products/product-list.component'
 })
 export class AppComponent {
-    pageTitle: string = "Demo Angular !!! - Project Management";
+    pageTitle: string = "Demo Angular";
 }
