@@ -11,7 +11,7 @@
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
-    
+
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
@@ -24,8 +24,108 @@
 </head>
 
 <body>
-    <pm-app></pm-app>
-    Starter files
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <a class="navbar-brand" href="~/">Bee Me</a>
+        <div class="navbar-header">
+            <button class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+        </div>
+        <div class="container-fluid navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav"><a href="">Home</a></li>
+                <li class="nav"><a href="">About</a></li>
+                <li class="nav"><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <!--@RenderBody()-->
+        <div class="row">
+            <div class="col-lg-12" id="image-wrapper">
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/1.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/6.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/richard-anderson-img-5345.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/atey-ghailan-214.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/per-haagensen-tdkr-catwoman01-perh.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/atey-ghailan-223.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/14.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/3.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/5.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/aleksandr-nikonov-sunlight-small.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/8.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/3 (2).jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/13.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/9.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/atey-ghailan-220.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/2.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/zezhou-chen-web2.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/richard-anderson-img-5339.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/7 (2).jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/alexander-deruchenko-the-nomads-last-journey.jpg"
+                            alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/7.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/arc-noir-1313.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/wl-op-3m.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/edouard-caplain-junkyard5.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/8 (2).jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/bilgee-jargal-deer-stone.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 thumb form-group">
+                    <a class="thumbnail" href="/artwork"><img class="img-responsive" id="testing" src="sourcehinh/8.1.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

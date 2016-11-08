@@ -1,8 +1,8 @@
 {
-    "name": "product-management",
+    "name": "bee-me",
     "version": "1.0.0",
-    "author": "Deborah Kurata",
-    "description": "Package for the Acme Product Management sample application",
+    "author": "",
+    "description": "Bee me project",
     "scripts": {
         "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
         "tsc": "tsc",
