@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core'
 import { IProduct } from './product'
-import { Product } from './product'
 
 @Component({
     selector: 'pm-product',
-    templateUrl: 'app/products/product-list.component.html',
-    styleUrls: ['app/products/product-list.component.css']
+    moduleId: module.id, //use relative path for UI and CSS
+    templateUrl: 'product-list.component.html',
+    styleUrls: ['product-list.component.css']
 })
 
 export class ProductListComponent implements OnInit {
@@ -13,7 +13,7 @@ export class ProductListComponent implements OnInit {
     imageWidth: number = 50;
     imageMargin: number = 2;
     showImage: boolean = false;
-    listFilter: string = 'cart';
+    listFilter: string = '';
     products: IProduct[] =
     [
         {
@@ -66,8 +66,7 @@ export class ProductListComponent implements OnInit {
             "starRating": 4.6,
             "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
         }
-    ] 
-    ;
+    ];
 
     toggleImage(): void {
         this.showImage = !this.showImage;
@@ -75,5 +74,9 @@ export class ProductListComponent implements OnInit {
 
     ngOnInit(): void {
         console.log('On Init nah ^^!!!!');
+    }
+
+    onRatingClicked(message: string): void {
+        this.pageTitle = 'Product List: ' + message;
     }
 }
